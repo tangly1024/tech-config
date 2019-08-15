@@ -14,6 +14,7 @@ spring:
     port: ${RABBIT_PORT:5672}
     username: ${RABBIT_USERNAME:guest}
     password: ${RABBIT_PASSWORD:guest}
+    virtual-host: tech
     ## 数据源
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
