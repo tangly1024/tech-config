@@ -10,10 +10,10 @@ server:
 
 spring:
   rabbitmq:
-    host: ${RABBIT_HOST:localhost}
-    port: ${RABBIT_PORT:5672}
-    username: ${RABBIT_USERNAME:guest}
-    password: ${RABBIT_PASSWORD:guest}
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
     virtual-host: tech
     ## 数据源
   datasource:
@@ -22,7 +22,6 @@ spring:
     #LINUX 下开发时会ssl证书出错；去掉$useSSL
     url: jdbc:mysql://localhost:3306/social?useSSL=false
     username: root
-    #    password: mysql3x63qdfcfj
     password: root
     initialSize: 5
     minIdle: 5
